@@ -8,5 +8,11 @@ function getComputerChoice(){
 }
 function getHumanChoice(){
     let humanChoice = prompt("Enter your choice: R, P or S").toUpperCase();
-    return humanChoice;
+    if(humanChoice == "R" || humanChoice == "P" || humanChoice == "S"){
+        return humanChoice;
+    }
+    else{
+        alert("Invalid choice. Please enter R, P or S.");
+        return getHumanChoice();
+    }
 }
