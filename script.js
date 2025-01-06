@@ -1,8 +1,11 @@
 const rock = "R";
 const paper = "P";
 const scissors = "S";
+let humanScore = 0;
+let computerScore = 0;
+const possibleMoves = [rock , paper, scissors]
+
 function getComputerChoice(){
-    const possibleMoves = [rock , paper, scissors]
     let computerChoice = Math.floor(Math.random() * possibleMoves.length);
     return possibleMoves[computerChoice];
 }
@@ -16,3 +19,4 @@ function getHumanChoice(){
         return getHumanChoice();
     }
 }
+
