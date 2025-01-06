@@ -1,6 +1,6 @@
-const rock = "R";
-const paper = "P";
-const scissors = "S";
+const rock = "ROCK";
+const paper = "PAPER";
+const scissors = "SCISSORS";
 let humanScore = 0;
 let computerScore = 0;
 const possibleMoves = [rock, paper, scissors];
@@ -10,11 +10,11 @@ const computerSelection = function getComputerChoice() {
   return possibleMoves[computerChoice];
 }
 const humanSelection = function getHumanChoice() {
-  let humanChoice = prompt("Enter your choice: R, P or S").toUpperCase();
-  if (humanChoice == "R" || humanChoice == "P" || humanChoice == "S") {
+  let humanChoice = prompt("Enter your choice: ROCK, PAPER or SCISSORS").toUpperCase();
+  if (humanChoice == "ROCK" || humanChoice == "PAPER" || humanChoice == "SCISSORS") {
     return humanChoice;
   } else {
-    alert("Invalid choice. Please enter R, P or S.");
+    alert("Invalid choice. Please enter  ROCK, PAPER or SCISSORS");
     return getHumanChoice();
   }
 }
@@ -34,3 +34,5 @@ function playRound(humanChoice, computerChoice) {
         console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
     }
 }
+
+playRound(humanSelection(), computerSelection());
