@@ -28,7 +28,6 @@ function playGame() {
   let computerScore = 0;
   function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
-      alert("It's a draw");
       console.log("It's a draw");
     } else if (
       (humanChoice == rock && computerChoice == scissors) ||
@@ -36,11 +35,9 @@ function playGame() {
       (humanChoice == scissors && computerChoice == paper)
     ) {
       humanScore++;
-      alert(`You win! ${humanChoice} beats ${computerChoice}`);
       console.log(`You win! ${humanChoice} beats ${computerChoice}`);
     } else {
       computerScore++;
-      alert(`You lose! ${computerChoice} beats ${humanChoice}`);
       console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
     }
   }
@@ -51,17 +48,15 @@ function playGame() {
   }
   (function finalScore() {
     if (humanScore > computerScore) {
-      alert("Congratulations, you won!");
       console.log("Congratulations, you won!");
     } else if (humanScore < computerScore) {
-      alert("Sorry, you lost!");
       console.log("Sorry, you lost!");
     } else {
-      alert("It's a tie!");
       console.log("It's a tie!");
     }
-    alert(`Final score: You - ${humanScore}, Computer - ${computerScore}`);
-    console.log(`Final score: You - ${humanScore}, Computer - ${computerScore}`);
+    console.log(
+      `Final score: You - ${humanScore}, Computer - ${computerScore}`
+    );
   })();
 }
 
