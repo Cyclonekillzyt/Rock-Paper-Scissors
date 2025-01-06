@@ -49,7 +49,18 @@ function playGame() {
     let computerChoice = computerSelection();
     playRound(humanChoice, computerChoice);
   }
-  alert(`Final score: You - ${humanScore}, Computer - ${computerScore}`);
+  function finalScore(){
+    alert(`Final score: You - ${humanScore}, Computer - ${computerScore}`);
+    console.log(`Final score: You - ${humanScore}, Computer - ${computerScore}`);
+    if(humanScore > computerScore){
+        alert("Congratulations, you won!");
+        console.log("Congratulations, you won!");
+    }
+    else{
+        alert("Sorry, you lost!");
+        console.log("Sorry, you lost!");
+    }
+  }
 }
 
 playGame();
