@@ -49,19 +49,20 @@ function playGame() {
     let computerChoice = computerSelection();
     playRound(humanChoice, computerChoice);
   }
-  function finalScore(){
+  (function finalScore() {
+    if (humanScore > computerScore) {
+      alert("Congratulations, you won!");
+      console.log("Congratulations, you won!");
+    } else if (humanScore < computerScore) {
+      alert("Sorry, you lost!");
+      console.log("Sorry, you lost!");
+    } else {
+      alert("It's a tie!");
+      console.log("It's a tie!");
+    }
     alert(`Final score: You - ${humanScore}, Computer - ${computerScore}`);
     console.log(`Final score: You - ${humanScore}, Computer - ${computerScore}`);
-    if(humanScore > computerScore){
-        alert("Congratulations, you won!");
-        console.log("Congratulations, you won!");
-    }
-    else{
-        alert("Sorry, you lost!");
-        console.log("Sorry, you lost!");
-    }
-  }
+  })();
 }
 
 playGame();
-
