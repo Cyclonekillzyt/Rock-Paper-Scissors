@@ -7,22 +7,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="welcome">
       <h1 class="heading">Rock Paper Scissors</h1>
-      <div class="player-choices">
-        <div class="Scores">
-          <p class="player1">Player Score: <span id="playerScore">0</span></p>
-          <p class="player2">Computer Score: <span id="computerScore">0</span></p>
+      <button class="start" id="start">Start</button>
+
+    </div>
+    <div class="center">
+      <div class="container">
+        <div class="player-choices">
+          <div class="Scores">
+            <p class="player1">Player Score: <span id="playerScore">0</span></p>
+            <p class="player2">
+              Computer Score: <span id="computerScore">0</span>
+            </p>
+          </div>
+          <p class="round">Round: <span id="round">1</span></p>
+          <p class="total" id="total"></p>
         </div>
-        <p class="round">Round: <span id="round">1</span></p>
-        <p class="total" id="total"></p>
-      </div>
-      <div class="button" id="button">
-        <button class="start" id="start">Start</button>
-        <button class="reset" id="reset">Reset</button>
-        <button class="choice" id="rock">Rock</button>
-        <button class="choice" id="paper">Paper</button>
-        <button class="choice" id="scissors">Scissors</button>
+        <div class="button" id="button">
+          <button class="reset" id="reset">Reset</button>
+          <button class="choice" id="rock">Rock</button>
+          <button class="choice" id="paper">Paper</button>
+          <button class="choice" id="scissors">Scissors</button>
+        </div>
       </div>
     </div>
     <div class="resultDeclaration">
