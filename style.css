@@ -28,3 +28,19 @@ body{
     width: 100%;
     flex-direction: column;
 }
+
+.start{
+    background: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: all 0.3s;
+}
+
+.start:hover{
+    background: #c00;
+}
