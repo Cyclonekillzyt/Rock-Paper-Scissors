@@ -9,6 +9,7 @@ body{
     font-family: Arial, sans-serif;
     height: 100vh;
     padding: 10px;
+    position: relative;
 }
 
 .container{
@@ -16,9 +17,14 @@ body{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
 .welcome{
     font-size: 24px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
 }
