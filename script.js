@@ -1,3 +1,4 @@
+const startBtn = document.getElementById("start");
 const rock = "ROCK";
 const paper = "PAPER";
 const scissors = "SCISSORS";
@@ -59,5 +60,9 @@ function playGame() {
     );
   })();
 }
+startBtn.addEventListener("click", () => {
+  startBtn.style.display = "none";
+  playGame();
+});
 
 //playGame();
