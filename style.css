@@ -53,3 +53,23 @@ body{
 .start:hover{
     background: #c00;
 }
+
+.player-choices{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.Scores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gameData{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
