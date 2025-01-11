@@ -1,4 +1,5 @@
 const startBtn = document.getElementById("start");
+const resetBtn = document.getElementById("reset");
 const rock = "ROCK";
 const paper = "PAPER";
 const scissors = "SCISSORS";
@@ -62,6 +63,7 @@ function playGame() {
 }
 startBtn.addEventListener("click", () => {
   startBtn.style.display = "none";
+  resetBtn.style.display = "block";
   playGame();
 });
 

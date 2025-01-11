@@ -30,7 +30,7 @@ body{
 .welcome{
     font-size: 24px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     flex-direction: column;
@@ -38,7 +38,10 @@ body{
 
 }
 
-.start{
+
+
+.start,.reset{
+    position: absolute;
     background: #f00;
     color: #fff;
     padding: 10px 20px;
@@ -48,10 +51,14 @@ body{
     font-size: 18px;
     margin-top: 20px;
     transition: all 0.3s;
+    top: 60px;
 }
 
-.start:hover{
+.start:hover,.reset:hover{
     background: #c00;
+}
+.reset{
+    display: none;
 }
 
 .player-choices{
