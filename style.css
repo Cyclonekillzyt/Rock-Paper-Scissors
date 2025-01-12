@@ -24,7 +24,7 @@ body{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
     height: 500px;
-    margin-bottom: 100px;
+    position: relative;
 }
 
 .welcome{
@@ -79,4 +79,50 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.resultDeclaration{
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 15vh;
+}
+
+.rps{
+    font-style: italic;
+    font-weight: 900;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    left: 0px;
+}
+
+.choice{
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    background: #c42914;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 40px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.choice:hover{
+    background: #a41a0f;
 }
