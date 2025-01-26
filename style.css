@@ -1,132 +1,249 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: url(pictures/new.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    position: relative;
+body {
+  background: url(pictures/new.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  position: relative;
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85vh;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
 }
-.container{
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    height: 500px;
-    position: relative;
-    display: none;
-}
-
-.welcome{
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    height: 15vh;
-
+.container {
+  background: rgba(194, 156, 156, 0.747);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: 500px;
+  position: relative;
+  display: none;
 }
 
-
-
-.start,.reset{
-    position: absolute;
-    background: #f00;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px;
-    transition: all 0.3s;
-    top: 60px;
+.welcome {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  height: 15vh;
 }
 
-.start:hover,.reset:hover{
-    background: #c00;
-}
-.reset{
-    display: none;
-}
-
-.player-choices{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    margin-bottom: 40px;
-}
-
-.Scores{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.start,
+.reset {
+  position: absolute;
+  background: #f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: all 0.3s;
+  top: 60px;
 }
 
-.gameData{
-    width: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.start:hover,
+.reset:hover {
+  background: #c00;
+}
+.reset {
+  display: none;
 }
 
-.resultDeclaration{
-    font-size: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    height: 15vh;
+.player-choices {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-bottom: 40px;
 }
 
-.rps{
-    font-style: italic;
-    font-weight: 900;
+.Scores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.buttons{
-    position: absolute;
-    bottom: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    left: 0px;
+.gameData {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.choice{
-    width: 90px;
-    height: 90px;
-    border-radius: 16px;
-    background: #c42914;
-    cursor: pointer;
-    transition: all 0.3s;
-    margin: 0 40px;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+.resultDeclaration {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  height: 15vh;
 }
 
-.choice:hover{
-    background: #a41a0f;
+.rps {
+  font-style: italic;
+  font-weight: 900;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  left: 0px;
+}
+
+.choice {
+  width: 90px;
+  height: 90px;
+  border-radius: 16px;
+  background: #c42914;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0 40px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.choice:hover {
+  background: #a41a0f;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.bg > img {
+  width: 100px;
+  height: 100px;
+}
+
+.reverse {
+  transform: scaleX(-1);
+}
+
+.animate {
+  transform: scale(1.2);
+  transition: all 3s ease-in-out;
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -ms-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  40% {
+    rotate: -30deg;
+  }
+  80% {
+    rotate: 30deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+@keyframes rotateReverse {
+  0% {
+    rotate: 0deg;
+  }
+  40% {
+    rotate: 30deg;
+  }
+  80% {
+    rotate: -30deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+.left {
+  animation: rotate 1s 3 ease-in-out;
+  -webkit-animation: rotate 1s 3 ease-in-out;
+}
+.right {
+  animation: rotateReverse 1s 3;
+  -webkit-animation: rotateReverse 1s 3;
+}
+
+.bg {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.winner {
+  background-color: black;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 16px;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Pricedown";
+}
+
+@font-face {
+  font-family: "Pricedown";
+  src: url("fonts/Pricedown\ Bl.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pricedown";
+  src: url("fonts/Pricedown\ Bl.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pricedown";
+  src: url("fonts/Pricedown\ Bl.otf") format("opentype");
+  font-weight: 300; 
+  font-style: normal;
 }
