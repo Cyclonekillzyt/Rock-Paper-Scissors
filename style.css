@@ -5,7 +5,10 @@
 }
 
 body{
-    background: #f2f2f2;
+    background: url(pictures/new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     height: 100vh;
     position: relative;
@@ -25,6 +28,7 @@ body{
     width: 500px;
     height: 500px;
     position: relative;
+    display: none;
 }
 
 .welcome{

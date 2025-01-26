@@ -13,7 +13,7 @@
       <button class="reset" id="reset">Reset</button>
     </div>
     <div class="center">
-      <div class="container">
+      <div class="container" id="container">
         <div class="player-choices">
           <div class="Scores">
             <p class="player">
@@ -22,14 +22,13 @@
             <p class="player">Player Score: <span id="playerScore">0</span></p>
           </div>
           <div class="gameData">
-            <p class="total">Total Scores: <span id="total"> 0</span> </p>
-            <p class="round">Round: <span id="round">1</span></p>
+            <p class="total">Ties: <span id="total"> 0</span> </p>
+            <p class="round">Round: <span id="round">0</span></p>
           </div>
         </div>
         <div class="resultDeclaration">
-          <P class="rps">Rock</P>
+          <P class="rps" id="rps">Rock</P>
           <p id="resultText">Player wins</p>
-          <p id="resultComparison">3 : 2</p>
         </div>
         <div class="buttons" id="button">
           <button class="choice" id="rock">Rock</button>
