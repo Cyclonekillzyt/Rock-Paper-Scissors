@@ -109,21 +109,26 @@ resetBtn.onclick = function finalScore() {
   currentRound = 0;
   humanScore = 0;
   computerScore = 0;
-  computer.textContent = computerScore;
+  total = 0;
+  humanChoice = "";
+  computerChoice = "";
+  round.textContent = currentRound;
   player.textContent = humanScore;
-  totalScore.textContent = 0;
+  computer.textContent = computerScore;
+  totalScore.textContent = total;
+  resultText.textContent = "";
+  rps.textContent = "...";
+  resetImage();
 };
 
 startBtn.addEventListener("click", () => {
-  startBtn.style.display = "none";
-  resetBtn.style.display = "block";
-  container.style.display = "block";
-  currentRound = 1;
+  setTimeout(() => {
+    startBtn.style.display = "none";
+    resetBtn.style.display = "block";
+    container.style.display = "block";
+    currentRound = 1;
+  }, 500);
 });
-
-startBtn.style.display = "none";
-resetBtn.style.display = "block";
-container.style.display = "block";
 
 function startingAnimation() {
   firstImage.classList.add("left");
