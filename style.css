@@ -9,9 +9,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: Arial, sans-serif;
+  font-family: "Pricedown";
   height: 100vh;
   position: relative;
+  color: #8bfa919c;
 }
 
 .center {
@@ -29,6 +30,8 @@ body {
   height: 500px;
   position: relative;
   display: none;
+  color: rgb(131, 54, 54);
+  font-size: 1.4em;
 }
 
 .welcome {
@@ -113,7 +116,7 @@ body {
   width: 90px;
   height: 90px;
   border-radius: 16px;
-  background: #c42914;
+  background: #ffffff;
   cursor: pointer;
   transition: all 0.3s;
   margin: 0 40px;
@@ -127,7 +130,11 @@ body {
 }
 
 .choice:hover {
-  background: #a41a0f;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
 
 .pictures {
@@ -246,4 +253,23 @@ body {
   src: url("fonts/Pricedown\ Bl.otf") format("opentype");
   font-weight: 300; 
   font-style: normal;
+}
+
+#rock{
+    background-image: url("pictures/rock.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#paper{
+    background-image: url("pictures/paper.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#scissors{
+    background-image: url("pictures/scissors.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
