@@ -126,7 +126,6 @@ startBtn.addEventListener("click", () => {
     startBtn.style.display = "none";
     resetBtn.style.display = "block";
     container.style.display = "block";
-    currentRound = 1;
   }, 500);
 });
 
